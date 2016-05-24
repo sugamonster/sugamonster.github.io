@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <title>CSS变形练习</title>
+    <meta charset='utf-8'>
+    <style>
+    .clearfix:before,
+    .clearfix:after{
+        display: table;
+        content: " ";
+    }
+    
+    .clearfix:after: {
+        clear: both;
+    }
+    
+    .box {
+        background-color: blue;
+        border-radius: 10px;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        color: white;
+        float: left;
+        margin: 50px;
+    }
+    
+    .box1 {
+        transform: rotate(45deg);
+    }
+    
+    .box2 {
+        transform: rotate(80deg);
+    }
+    
+    </style>
+</head>
+
+<body>
+    <h1>CSS变形练习</h1>
+    <div class="clearfix">
+        <h2>2D旋转</h2>
+        <div class="box box1">box 1</div>
+        <div class="box box2">box 2</div>
+    </div>
+
+    </div>
+</body>
+
+</html>
